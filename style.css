@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f3f6fb;
+  color: #222;
+}
+
+header {
+  background-color: #660000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #800000;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background-color: #b30000;
+}
+
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Bagian Rute */
+.rute img {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-top: 15px;
+}
+
+/* Bagian Link */
+.links a {
+  display: block;
+  margin: 15px auto;
+  width: 250px;
+  text-decoration: none;
+  color: white;
+  background-color: #800000;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background-color: #b30000;
+}
+
+/* Bagian Sarana */
+.sarana-box {
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px 15px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.sarana-box:hover {
+  transform: scale(1.02);
+}
+
+.sarana-box img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.sarana-text {
+  text-align: left;
+  font-size: 18px;
+  color: #003366;
+}
+
+/* Sembunyikan semua section dulu */
+.section {/* === SLIDER === */
+.slider {
+  position: relative;
+  width: 444px;
+  height: 242px;
+  margin: 25px auto;
+  overflow: hidden;
+  border-radius: 15px;        /* pinggiran halus */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* bayangan lembut */
+  background-color: #fff;
+}
+
+.slider {
+  position: relative;
+  width: 444px;
+  height: 242px;
+  margin: 25px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+  /* 🔹 Tambahan background gambar */
+  background-image: url("https://media.discordapp.net/attachments/1072783378228723754/1428652375023026178/RobloxScreenShot20251017_141829393.png?ex=6901c835&is=690076b5&hm=a287142e2f6f305c7452bef806af242f9dc3843f655c6365d3bf05d5d97dcf54&=&format=webp&quality=lossless&width=1256&height=684");
+  background-size: cover;       /* biar pas menutupi area slider */
+  background-position: center;  /* posisi di tengah */
+  background-repeat: no-repeat;
+}
+
+
+.slides img {
+  width: 444px;
+  height: 242px;
+  object-fit: cover;          /* biar proporsional tanpa distorsi */
+  border-radius: 15px;        /* pinggiran halus */
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.footer-image {
+  text-align: center;
+  margin-top: 40px;
+  background-color: #660000; /* warna dasar agar nyatu sama tema */
+  padding: 20px 0;
+}
+
+.footer-image img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+/* === PARTNER SECTION === */
+.partner {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.partner-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  width: 80%;
+  max-width: 600px;
+  margin: 25px auto;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: scale(1.03);
+}
+
+.partner-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.partner-card p {
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #222;
+  line-height: 1.5;
+}
+
+.partner-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  background-color: #800000;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.partner-btn:hover {
+  background-color: #b30000;
+}
+
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+  display: none;
+}
+
+.active {
+  display: block;
+}
